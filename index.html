@@ -27,7 +27,7 @@
                     <a href="#">Pricing</a>
                     <a href="#">Contact Us</a>
                     <a href="#">Login</a>
-                    <a href="#">Sign up</a>
+                    <a href="#" class"nav__link--primary">Sign up</a>
                 </div>
                 <button class="btn__menu" onclick="openMenu()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -40,7 +40,10 @@
                 </button>
             </div>
         </nav>
-        <div class="Nav">
+    </section>
+</body> 
+        
+        <div class="nav">
             <button class="btn__menu btn__menu--close" onclick="closeMenu()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -56,19 +59,16 @@
                 <a href="Contact Us"class="nav__link">Contact Us</a>                 
                 <a href="Login"class="nav__link">Login</a>
                 <a href="#" class="nav__link--primary">Sign Up</a>
-             <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+             
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="light___StyledCloseIcon-lj69nl-14 fASujC">
                     <line x1="18" y1="6" x2="6" y2="18"></line>
                     <line x1="6" y1="6" x2="18" y2="18"></line>
                 </svg>
-             </button>     
-            </div>
-        </div>
-    </section>
-</body>
-</html>
+             </div>
+     
+
         
         
         <header>
@@ -81,7 +81,16 @@
                 </h1>
                 <p class="header__description--para">
                     "Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components." </p>
-                <div class="header__email"></div>
+                <div class="header__email">
+                    <input
+                    type ="email"
+                    class="header__email--input"
+                    placeholder="Your E-mail Address"
+                    aria-label="Email address">
+                <button class="header__email--btn" type="button">
+                    Get Started
+                </button>
+                </div>
                 <p class="header__customers--title">OUR TRUSTED CUSTOMERS</p>
                 <img src="assets/customers-logo-strip.680ac7c2e8ae28161d2c.png"
                 class="header__customers">
