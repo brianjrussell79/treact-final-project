@@ -1163,7 +1163,7 @@ a {
   cursor: pointer;
 }
 
-.footer__column--link:after {
+.footer__column--link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -1176,7 +1176,7 @@ a {
   
 }
 
-.footer__column--link:hover:after {
+.footer__column--link:hover::after {
   opacity: 1;
 }
 
@@ -1275,7 +1275,7 @@ MOBILE RESPONSIVENESS ↓
   }
 
   .header__desription--para {
-    margin: 20 px 0;
+    margin: 20px 0;
   }
 
   .header__description,
