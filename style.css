@@ -594,7 +594,7 @@ VALUES ↓
 }
 
 .value__title {
-  display: flex; 
+  display: flex;
   align-items: center;
 }
 
@@ -619,8 +619,7 @@ VALUES ↓
   font-size: 20px;
   font-weight: bold;
   color: #243e63;
-  
-  }
+}
 
 .value:nth-of-type(2) .value__img--wrapper {
   margin-top: 32px;
@@ -1049,7 +1048,7 @@ START / CALL TO ACTION ↓
 }
 
 .start__title,
-.start__buttons{
+.start__buttons {
   width: 50%;
 }
 
@@ -1093,7 +1092,7 @@ FOOTER ↓
 
 */
 
-footer {
+.footer {
   padding: 96px 32px;
   background-color: rgb(100, 21, 255);
   margin-bottom: -32px;
@@ -1114,17 +1113,17 @@ footer {
 
 .footer__blob--2 {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 0px;
+  right: 0px;
   width: 320px;
   height: 320px;
-  transform: translateX(128px) translateY(192px);
+  transform: translateX(128px) translateY(80px);
   z-index: 1;
   opacity: 0.5;
 }
 
 .footer__columns {
-  margin-top: -48px;
+  margin-top: 48px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1173,7 +1172,6 @@ a {
   background-color: #fff;
   transition: transform 300ms ease;
   opacity: 0;
-  
 }
 
 .footer__column--link:hover::after {
