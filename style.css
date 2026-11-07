@@ -52,9 +52,7 @@ nav {
 
 .nav__row {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  padding-block: 32px;
 }
 
 .nav__logo {
@@ -110,17 +108,16 @@ nav {
 
 .nav__links {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-items: flex-end;
   padding: 18px;
 }
 
-.nav__links a {
-  text-decoration: none;
+.nav__links:hover {
+  border-bottom: 2px solid #6415ff;
 }
 
 .nav__link {
+  position: relative;
   color: #1a202c;
   font-size: 14px;
   font-weight: 600;
@@ -585,6 +582,7 @@ VALUES ↓
   margin-left: 0px;
   margin-right: 0px;
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -594,7 +592,7 @@ VALUES ↓
 }
 
 .value__title {
-  display: flex; 
+  display: flex;
   align-items: center;
 }
 
@@ -602,6 +600,11 @@ VALUES ↓
   border-radius: 50%;
   display: flex;
   justify-content: center;
+}
+
+.value.value:nth-of-type(1) .value__img--wrapper {
+  margin-top: 32px;
+  background-color: #feb2b2;
 }
 
 .values__img {
@@ -619,8 +622,7 @@ VALUES ↓
   font-size: 20px;
   font-weight: bold;
   color: #243e63;
-  
-  }
+}
 
 .value:nth-of-type(2) .value__img--wrapper {
   margin-top: 32px;
@@ -699,7 +701,7 @@ PRICING ↓
   letter-spacing: 0.05em;
 }
 
-.plan__bottom {
+.plan__button {
   padding: 32px 64px;
 }
 
@@ -819,13 +821,16 @@ button {
   );
 }
 
-/* 
+.plan__button:hover {
+  transform: translate(1px -1px);
+  box-shadow:
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
 
-TESTIMONIALS ↓
-
-*/
-
-#testimonials .row {
+TESTIMONIALS ↓ */ #testimonials .row {
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -1049,7 +1054,7 @@ START / CALL TO ACTION ↓
 }
 
 .start__title,
-.start__buttons{
+.start__buttons {
   width: 50%;
 }
 
@@ -1082,9 +1087,18 @@ START / CALL TO ACTION ↓
   transition: all 300ms ease;
 }
 
+.start__button:nth-child(1):hover {
+  background-color: rgba(229, 62, 62);
+}
+
 .start__button:nth-child(2) {
   border: 1px solid rgb(160, 174, 192);
   transition: all 300ms ease;
+}
+
+.start__button:nth-child(2):hover {
+  background-color: #f7fafc;
+  color: #6415ff;
 }
 
 /* 
@@ -1173,7 +1187,6 @@ a {
   background-color: #fff;
   transition: transform 300ms ease;
   opacity: 0;
-  
 }
 
 .footer__column--link:hover:after {
